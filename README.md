@@ -24,12 +24,12 @@ This is a Django pasting application powered by python Django that provides main
 
 
 ## Demo of the application
- You can have a look of my application here: https://www.loom.com/embed/b2c8d3d1f9714f13b5b63f7cd8ae719e
+ You can have a look of my application here: https://www.loom.com/share/29fb81c10eba4dd89deb0f6f162d59c9
 
 
 ## Deployment Link
 The Dustbin4Devs application is deployed in heroku platform. This is the link to the deployed application <b>:</b>
- [https://dustbin4devs.herokuapp.com/](https://dustbin4devs.herokuapp.com/)
+ [https://dustbinfordevs.herokuapp.com/](https://dustbinfordevs.herokuapp.com/)
 
 
  
@@ -64,6 +64,19 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'home',
+    'ckeditor',
+    'urlshortner'
+]
+
 ```
 
 So we are done✌. Just few more steps to get it running in local server.
