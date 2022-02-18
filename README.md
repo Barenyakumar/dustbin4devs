@@ -69,7 +69,7 @@ DATABASES = {
 So we are done✌. Just few more steps to get it running in local server.
 
 ## Running in the local server(Optional)
-Open the git bash inside the privatechat directory present in the root directory of the repository.
+Open the git bash inside the pastopedia directory present in the root directory of the repository.
 Run the following commands in order one by one:
 ```
 $ python manage.py makemigrations
