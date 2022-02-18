@@ -45,24 +45,49 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+            {% comment %}
             <form class="d-flex">
               <a class="btn btn-outline-light" type="submit" href="/pastetext"
                 >Create New Paste</a
               >
             </form>
+            {% endcomment %}
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle btn btn-light"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Create
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="/pastetext">New Paste</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/urlshortner">Shorten URL</a>
+                </li>
+              </ul>
+            </li>
           </div>
         </div>
       </nav>
     </div>
 
     <!--WOrk container-->
-    <div class="work__container bd-container p-5" style="background-color: whitesmoke;">
+    <div
+      class="work__container bd-container p-5"
+      style="background-color: whitesmoke"
+    >
       <section class="home" id="home">
         <div class="home__container bd-grid">
           <div class="home__data">
             <h1 class="home__title">All my pastes</h1>
           </div>
-        </div> 
+        </div>
       </section>
       <div class="row row-cols-1 g-4">
         {% for pastedtext in pastedtexts reversed %}

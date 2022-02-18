@@ -23,7 +23,7 @@ def home(request):
     pastedtexts = PastedText.objects.filter(
         created_by=request.user).order_by('created_at')
     return render(request, 'home.html', {'pastedtexts': pastedtexts}) #dictionary
-
+ 
 
 def pastetext(request):
 

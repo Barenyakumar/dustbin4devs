@@ -1,5 +1,5 @@
 # Dustbin4Devs- A Django pasting cum sharing Application
-
+## Go as per instructions 
 <p align="center">
   <img width="370" height="140" src="https://i.ibb.co/GQz42cw/image.png">
 </p>

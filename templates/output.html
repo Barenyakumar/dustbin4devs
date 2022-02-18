@@ -61,7 +61,7 @@
         max-height: 350px;
         overflow-y: scroll;
       "
-    > 
+    >
       <label for="paster">Recent works</label><br />
 
       <p class="pt-1 px-4">{{pastedtext.text|safe}}</p>
@@ -72,7 +72,9 @@
       <span class="password"> {{pastedtext.password}}</span> <br />
       <strong> URL : </strong>
       <span class="url">
-        <a href="https://dustbin4devs.herokuapp.com{{request.get_full_path}}">https://dustbin4devs.herokuapp.com{{request.get_full_path}}</a></span
+        <a href="https://dustbinfordevs.herokuapp.com{{request.get_full_path}}"
+          >https://dustbinfordevs.herokuapp.com{{request.get_full_path}}</a
+        ></span
       >
     </div>
 
